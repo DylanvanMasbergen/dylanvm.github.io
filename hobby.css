@@ -1,0 +1,106 @@
+*{margin:0;
+  padding:0;
+
+}
+body{background-image:url(ff.jpg);
+	background-repeat:repeat;
+	background-size:100%;
+	padding: 2em; 
+}
+p.gamen{ text-align: center;
+
+
+}
+p.hobby{text-align: center;
+
+
+}
+p.TWD{text-align: left;
+
+
+
+}
+
+
+@import "compass/css3";
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+ul.lijst {display:block;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: rgba(100, 100, 100, 0.8);
+}
+
+.aside-1 {
+  background: rgba(100, 100, 100, 0.5);
+}
+
+.aside-2 {
+  background: rgba(100, 100, 100, 0.5);
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
